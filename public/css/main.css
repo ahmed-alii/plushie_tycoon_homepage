@@ -334,7 +334,8 @@
   src: url("../fonts/04B_30__.TTF");
   src: url("../fonts/04B_30__.woff"); }
 body {
-  font-family: plush, sans-serif; }
+  font-family: plush, sans-serif;
+  overflow-x: hidden; }
   body .normal-text {
     font-family: var(--bs-font-sans-serif); }
 
@@ -570,12 +571,13 @@ section.roadmap {
 
 .doggo {
   background-color: #BBF1E5;
-  background-image: url("../img/doggo-bg.png");
+  background-image: url("../img/doggobg2.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 1100px;
-  padding-top: 15%; }
+  padding-top: 15%;
+  position: relative; }
   .doggo .doggo-whitebox {
     background-image: url("../img/doggo-whitebox.png");
     background-position: center;
@@ -585,6 +587,18 @@ section.roadmap {
     height: 240px;
     width: 240px;
     padding: 40px !important; }
+  .doggo .gif {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 90px;
+    z-index: 0; }
+    .doggo .gif img {
+      width: 100%;
+      max-height: 440px;
+      position: absolute;
+      bottom: 0; }
 
 .whitepaper {
   background-color: #BBF1E5;
@@ -618,7 +632,7 @@ section.roadmap {
       margin-top: 20px; }
 
 footer {
-  background-image: url("../img/footer-bg.png");
+  background-image: url("../img/cat1208.gif");
   background-size: 100%;
   background-repeat: no-repeat;
   padding-top: 180px;
